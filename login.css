@@ -456,7 +456,7 @@ width: 50%;
     }
     .use input{
         font-size: 45px;
-        padding: 20px;
+        padding: 10px;
         padding-right:160px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
@@ -464,7 +464,7 @@ width: 50%;
 }
     .pass input{
  font-size: 45px;
-        padding: 20px;
+        padding: 10px;
         padding-right:160px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
@@ -514,7 +514,7 @@ width: 50%;
     }
     .mmm input{
         font-size: 45px;
-        padding: 20px;
+        padding: 10px;
         padding-right:160px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
@@ -522,7 +522,7 @@ width: 50%;
 }
     .ttt input{
  font-size: 45px;
-        padding: 20px;
+        padding: 10px;
         padding-right:160px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
@@ -530,7 +530,7 @@ width: 50%;
     }
     .aaa input{
  font-size: 45px;
-        padding: 20px;
+        padding: 10px;
         padding-right:160px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
@@ -538,7 +538,7 @@ width: 50%;
     }
     .kkk input{
  font-size: 45px;
-        padding: 20px;
+        padding: 10px;
         padding-right:160px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
@@ -571,7 +571,6 @@ width: 50%;
         margin-right: 22px;
 }
     .ancor{
-        margin-left: 20px;
         font-family: inherit;
     }
     .rem p{
