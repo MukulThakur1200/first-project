@@ -1,271 +1,20 @@
 <html>
 <head>
-    <link rel="stylesheet" href="login.css">
-    <title>hackerrank signup</title>
-        <script src="https://kit.fontawesome.com/f3bafaabb7.js" crossorigin="anonymous"></script>
-
+    <title>Neon button</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-    <script>
-            
-          var m=1;
-            var s=01; 
-        
-        function forgot(){
-             
-            var qe=localStorage.getItem("Ques");
-            var an=localStorage.getItem("Answer");
-            var st=localStorage.getItem("password");
-            var fg=localStorage.getItem("Name");
-
-           var pr= prompt("Security Question: \n"+qe);
-            
-            if(an==pr)
-                {
-                    alert("Your Username:- " + fg +"\nYour Password:-  " +st+ "\n");
-                }
-            else{
-                alert("Wrong Answer!!\n \n I would Suggest you to create a new account.");
-            }
-            
-        };
-    
-        function create()
-        {
-            var pp =document.getElementById("jk").value;
-             var pk =document.getElementById("zz").value;
-            var pq =document.getElementById("lk").value;
-             var rs =document.getElementById("jk").value;
-            
-            if(pp == ""||pq == ""||rs == ""||pk == "")
-                {
-                    alert("All Fields are Mandatory to be filled. ");
-                } 
-            
-               else{
-
-            if(pp==pk)
-        {
-             var rr=document.getElementById("lk");
-             var pp =document.getElementById("jk");
-            var jj =document.getElementById("ab");
-            var ll =document.getElementById("cars");
-
-
-         localStorage.setItem("Ques",ll.value);                         
-         localStorage.setItem("Answer",jj.value);             
-         localStorage.setItem("Name",rr.value);
-        localStorage.setItem("password",pp.value);
-            
-         alert("Your account is Successfully created!! ");
-            location.reload();
-            
-            
-        }
-            else{
-                alert("Password and the Confirm Password are not same!!");
-                location.reload();
-            }
-               }
-        };
-            
-        
-            function check(){
-                
-                var name=document.getElementById("uss").value;
-                var password=document.getElementById("pass").value;
-            
-                
-                
-                var stname=localStorage.getItem("Name");
-                var stpassword=localStorage.getItem("password");
-
-                if(stpassword == password && stname == name)
-                {
-                    
-                     window.location.replace("amajon.html");
-                        alert("Login successful");
-                    }
-                                
-                else{
-                    
-                    alert("invalid password");
-                    location.reload();
-                }
-                
-        
-            
-            };
-        
-        function tick(){
-         document.getElementById("box").style.display="none";                           
-         document.getElementById("ch").style.display="block";
-            
-        };
-        
-        function pick(){
-        
-        document.getElementById("box").style.display="block";                           
-         document.getElementById("ch").style.display="none";        
-        };
-    
-    
-     function sign(){
-        
-       document.getElementById("mmm").style.display="block";                  document.getElementById("ttt").style.display="block";
-         document.getElementById("aaa").style.display="block";
-         document.getElementById("main2").style.display="block";
-        document.getElementById("butt").style.display="block";
-     document.getElementById("sss").style.display="block";
-        document.getElementById("kkk").style.display="block";
-        document.getElementById("inn").style.display="block";
-         
-
-         document.getElementById("uss").style.display="none";                      document.getElementById("pass").style.display="none";
-         document.getElementById("ancor").style.display="none";  
-        document.getElementById("log").style.display="none";                                  document.getElementById("buttwo").style.display="none";                 
-         document.getElementById("sign").style.display="none";   
-         
-               
-         
-            function showTime()
-            {       
-                if(s==0)
-                {
-                m=m-1;
-                    s=60;
-                }
-               s--;
-              
-            var time= "Session End in:- "+m+":"+s;
-            document.getElementById("inn").innerText=time;
-            setTimeout(showTime,1000);
-                if(m==0 && s==0)
-                    {
-                      alert("Session End!!");
-                       location.reload(); 
-                    }
-                 }
-         
-        showTime();
-            
-     }
-        
-        function login(){
-            
-              
-         document.getElementById("mmm").style.display="none";         document.getElementById("ttt").style.display="none";
-        document.getElementById("aaa").style.display="none";
-        document.getElementById("main2").style.display="none";
-        document.getElementById("butt").style.display="none";
-        document.getElementById("sss").style.display="none";
-        document.getElementById("kkk").style.display="none";
-
-            
-
-            
-        document.getElementById("uss").style.display="block";
-        document.getElementById("pass").style.display="block";
-        document.getElementById("ancor").style.display="flex";
-        document.getElementById("buttwo").style.display="block";
-        document.getElementById("sign").style.display="block";              
-        document.getElementById("log").style.display="block"; 
-        document.getElementById("main").style.display="flex";          
-        document.getElementById("inn").style.display="none";
-        
-  
-        }
-        
-    
-            function opacity()
-        {   
-            
-            document.getElementById("left").style.display="none";
-            document.getElementById("right").style.display="none";
-            document.getElementById("all").style.display="block";
-            document.getElementById("full").style.display="block";
-        
-                   
-        }
-        
-    
-    </script>
-<body>
-    <div class="all" id="all">
-        <div class="top" id="top"> 
-            <h1>Hackerrank</h1>
-    </div>
-     <div class="main" id="main">
-    
-        <a id="sign" onclick="sign()">Sign up  </a>
-        <a id="log">Log in</a>
-        </div>
-        
-        <div class="use">
-            <input id="uss" type="text" placeholder="Your username or email"><br></div>
-        <div class="pass">
-    <input id="pass" type="password" placeholder="Your password">
-        </div>
-            <div class="ancor" id="ancor">
-                <div class="rem"> 
-                    <div id="ch" onclick="javascript:pick()";><i class="fas fa-check"></i></div>
-                    <div id="box" onclick="javascript:tick()";><i class="far fa-square" ></i></div>
-                    <p> Remember me </p> 
-                </div> 
-            <a href="javascript:forgot();">Forgot Your Password?</a>
-        </div>
-            <div class="buttwo" id="buttwo">
-                <a onclick=" javascript:check()";>Log In</a>
-        </div>
-        
-<!--------------------------------------------------------------------------------->
- <div class="main2" id="main2">
-      <a id="sign2"> Sign up </a>
-        <a id="log2" onclick="login()">Log in</a>
-        </div>
-        <div class="inn" id="inn"> </div>
-  <div class="mmm" id="mmm">
-            <input id="lk" type="text" placeholder="Your username or email"><br></div>
-        <div class="ttt" id="ttt">
-    <input id="jk" type="password" placeholder="Your password">
-        </div>
-            <div class="aaa" id="aaa">
-    <input id="zz" type="password" placeholder="Confirm password">
-        </div>
-        <br>
-        <form class="sss" id="sss">
-  <label for="Security">Security Question:</label>
-        <br>
-    <select id="cars" name="cars">
-    <option value="Your first school Name">Your first school Name</option>
-    <option value="Name of Your Pet">Name of Your Pet</option>
-    <option value="Your Month of birth">Your Month of birth</option>
-    <option value="Your nick Name">Your nick Name</option>
-  </select>
-</form>
-              <div class="kkk" id="kkk">
-    <input id="ab" type="text" placeholder="Answer">
-        </div>
-        
-            <div class="butt" id="butt">
-                <a onclick=" javascript:create()";>Create Account</a>
-        </div>
-    </div>
-    
-<!---------------------------------------------------------------------------------------------------->
-    
-
-        <div class="top1"> 
+    <body>
+        <div class="top"> 
             <h1>HackerRank</h1>
             <div>
-            <a href="javascript:opacity();" >Login</a>
-            <a href="javascript:opacity();" >Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="login.html">Sign Up</a>
      </div>
         </div>
         
         
         
-        <div class="full" id="full"> 
-        <img src="123.jpg"alt="hackerrank image" class="img1">
+        
         <div class="right" id="right">
         <img src="123.jpg"alt="hackerrank image">
         </div>
@@ -283,15 +32,17 @@
                       <h2>For companies</h2>
             </div>
                
-            <br><a class="d" id="d">We are the market-leading<br> technical interview platform <br>to identify and hire developers<br> with the right skills.</a>
+            <br><a class="d">We are the market-leading<br> technical interview platform <br>to identify and hire developers<br> with the right skills.</a>
             <a class="c">Join over 7 millon developers,<br>practice coding skills,prepare<br> for interviews,and get hired.</a>
-         <br><br><br><br><br><br><a class="butone"   href="javascript:opacity();" >Sign Up & Code</a>
-         <a class="butthree">Start Hiring</a>
+         <br><br><br><br><br><br><a class="butone" href="login.html">Sign Up & Code</a>
+         <a class="buttwo">Start Hiring</a>
         </div>
         
-    </div>
+
+
         
-         </body>
-      
+       
+    </body>
     
 </html>
+      

@@ -12,13 +12,12 @@
     border: 1px double black;
     padding: 15px;
     margin: 10px;
-    display:none;
     background-color:white;
     
 }
 
 .top h1{
-    font-family: cursive;
+    font-family:inherit;
     font-weight: bold;
     text-align: center;
     padding-bottom: 20px;
@@ -104,6 +103,10 @@
     
     align-items: center;
 }
+#cap{
+    margin-top: 10px;
+}
+
 
 /*#########################################################################################*/
 
@@ -247,7 +250,7 @@
     background-color: white
 }
 .top1 h1{
-    font-family: cursive;
+    font-family:inherit;
     font-weight: 900;
     font-size: 25px;
     padding-left: 95px;
@@ -301,7 +304,7 @@ body{
 .c{
        position: absolute;
     left:95px;
-    font-family: cursive;
+    font-family:inherit;
     font-size: 17px;
     color: grey;
 
@@ -310,7 +313,7 @@ body{
 .d{
    position: absolute;
     left: 440px;
-     font-family: cursive;
+     font-family: inherit;
     color: grey;
     font-size: 17px;
 }
@@ -419,8 +422,8 @@ width: 50%;
 
     .top1 h1{
         font-size: 60px;
-        
-        
+      font-family: inherit;
+        padding-right: 5px;
     }
     .top1 a{
         text-decoration: none;
@@ -430,7 +433,149 @@ width: 50%;
         text-decoration: none;
         margin-left: 70px;
     }
+    .all{
+        top: 55%;
+        width: 80%;
+        height: auto;
+        align-content: center;
+    }
+      .top h1 {
+        font-size: 70px;
+      margin-bottom: 20px;
+    }
+    .main a{
+        margin-top: 30px;
+        font-size: 60px;
+        font-family: inherit;
+        padding-left: 90px;
+         padding-right: 80px;
+        font-weight: 400;
+    }
+    .main a:last-child{
+    box-shadow: 0px 3px 8px grey ;
+    }
+    .use input{
+        font-size: 45px;
+        padding: 20px;
+        padding-right:160px;
+        margin-left: 20px;
+    box-shadow: 3px 3px 3px grey ;
+        margin-top: 50px;
+}
+    .pass input{
+ font-size: 45px;
+        padding: 20px;
+        padding-right:160px;
+        margin-left: 20px;
+    box-shadow: 3px 3px 3px grey ;
+        margin-top: 20px;        
+    }
+    
+    .buttwo a{
+        font-family: inherit;
+        font-size: 50px;
+        padding: 25px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .ancor{
+        font-size: 40px;
+         margin-top: 25px;
+    margin-bottom:15px;
+        margin-right: 20px
+    }
+    
+    #cap
+    {
+        width: 250;
+        height: 100;
+        margin-top: 15px;
+        margin-left: 25px;
+        
+    }
+    i{
+        font-size: 40px;
+    }
+    
+    
+    
+    
+       
+    .main2 a{
+        margin-top: 30px;
+        font-size: 60px;
+        font-family: inherit;
+         padding-left: 90px;
+         padding-right: 80px;
+        font-weight: 400;
+    }
+    .main2 a:first-child{
+    box-shadow: 0px 3px 8px grey ;
+    }
+    .mmm input{
+        font-size: 45px;
+        padding: 20px;
+        padding-right:160px;
+        margin-left: 20px;
+    box-shadow: 3px 3px 3px grey ;
+        margin-top: 50px;
+}
+    .ttt input{
+ font-size: 45px;
+        padding: 20px;
+        padding-right:160px;
+        margin-left: 20px;
+    box-shadow: 3px 3px 3px grey ;
+        margin-top: 20px;        
+    }
+    .aaa input{
+ font-size: 45px;
+        padding: 20px;
+        padding-right:160px;
+        margin-left: 20px;
+    box-shadow: 3px 3px 3px grey ;
+        margin-top: 20px;        
+    }
+    .kkk input{
+ font-size: 45px;
+        padding: 20px;
+        padding-right:160px;
+        margin-left: 20px;
+    box-shadow: 3px 3px 3px grey ;
+        margin-top: 20px;        
+    }
+    .butt{
+        font-family: inherit;
+        font-size: 45px;
+        padding: 25px;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-right: 22px;
+        margin-top: 30px;
+    }
+    
+    .sss label{
+    font-family: inherit;
+    font-size: 45px; 
+    margin-left: 27%;
+    padding: 2%;
+}
+.sss select{
+    font-family: inherit;
+    font-size: 40px;
 
+}  
+   
+    .inn{       
+        font-size: 40px;
+        margin-right: 22px;
+}
+    .ancor{
+        margin-left: 20px;
+        font-family: inherit;
+    }
+    .rem p{
+        font-family: inherit;        
+    }
 }
     
-
