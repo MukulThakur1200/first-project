@@ -529,7 +529,7 @@ width: 50%;
         margin-top: 20px;        
     }
     .aaa input{
- font-size: 45px;
+       font-size: 45px;
         padding: 10px;
         padding-right:160px;
         margin-left: 20px;
@@ -537,8 +537,8 @@ width: 50%;
         margin-top: 20px;        
     }
     .kkk input{
- font-size: 45px;
-        padding: 10px;
+        font-size: 45px;
+        padding: 10px; 
         padding-right:160px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
