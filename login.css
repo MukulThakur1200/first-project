@@ -249,6 +249,7 @@
 .top1{
     height: 18vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: white
 }
@@ -423,7 +424,12 @@ width: 50%;
         display: none;
     }
 
+    .top1{
+        display:flex;
+        justify-content: space-around;
+    }
     .top1 h1{
+       
         font-size: 60px;
       font-family: inherit;
         padding-right: 5px;
@@ -442,6 +448,8 @@ width: 50%;
         height: auto;
         align-content: center;
     }
+        
+    
       .top h1 {
         font-size: 80px;
       margin-bottom: 20px;
@@ -464,6 +472,7 @@ width: 50%;
         font-size: 50px;
         padding: 25px;
         padding-right:180px;
+        margin-right: 20px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 50px;
@@ -473,7 +482,8 @@ width: 50%;
     .pass input{
  font-size: 50px;
         padding: 25px;
-        padding-right:180px;
+        padding-right:180px;   
+        margin-right: 20px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 30px;        
@@ -525,6 +535,7 @@ width: 50%;
         font-size: 50px;
         padding: 25px;
         padding-right:180px;
+        margin-right: 20px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 50px;
@@ -533,6 +544,7 @@ width: 50%;
  font-size: 50px;
         padding: 25px;
         padding-right:180px;
+        margin-right: 20px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 30px;        
@@ -541,6 +553,7 @@ width: 50%;
        font-size: 50px;
         padding: 25px;
         padding-right:180px;
+        margin-right: 20px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 30px;        
@@ -549,6 +562,7 @@ width: 50%;
         font-size: 50px;
         padding: 25px; 
         padding-right:180px;
+        margin-right: 20px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 30px;        

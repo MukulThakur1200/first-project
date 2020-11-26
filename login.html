@@ -78,13 +78,23 @@
                 var stname=localStorage.getItem("Name");
                 var stpassword=localStorage.getItem("password");
 
-                if(stpassword == password && stname == name)
+                var bk = document.getElementById("c1");
+                
+                
+                
+                if(stpassword == password && stname == name && bk.value==ak)
                 {
                     
                      window.location.replace("amajon.html");
                         alert("Login successful");
                     }
-                                
+                    
+                     else if(ak !=bk.value)
+                {
+                         alert("Wrong Captcha!!");
+                    window.location.reload();
+                        
+                }  
                 else{
                     
                     alert("invalid password");
