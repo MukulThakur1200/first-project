@@ -9,11 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white
+    background-color: white;
 }
 
 .top h1{
-    font-family: inherit;
+ font-family:inherit;
     font-weight: 900;
     font-size: 25px;
     padding-left: 47.5px;
@@ -181,14 +181,14 @@ width: 50%;
         display: none;
     }
     .top{
-        display: flex;
+       display:flex;
         justify-content: space-around;
     }
 
     .top h1{
-        font-size: 60px;
-        
-        
+         font-size: 60px;
+      font-family: inherit;
+        padding-right: 5px;        
     }
     .top a{
         text-decoration: none;
