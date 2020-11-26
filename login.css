@@ -435,7 +435,7 @@ width: 50%;
     }
     .all{
         top: 55%;
-        width: 80%;
+        width:auto;
         height: auto;
         align-content: center;
     }
@@ -456,16 +456,16 @@ width: 50%;
     }
     .use input{
         font-size: 45px;
-        padding: 10px;
-        padding-right:160px;
+        padding: 20px;
+        padding-right:140px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 50px;
 }
     .pass input{
  font-size: 45px;
-        padding: 10px;
-        padding-right:160px;
+        padding: 20px;
+        padding-right:140px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 20px;        
@@ -514,32 +514,32 @@ width: 50%;
     }
     .mmm input{
         font-size: 45px;
-        padding: 10px;
-        padding-right:160px;
+        padding: 20px;
+        padding-right:140px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 50px;
 }
     .ttt input{
  font-size: 45px;
-        padding: 10px;
-        padding-right:160px;
+        padding: 20px;
+        padding-right:140px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 20px;        
     }
     .aaa input{
        font-size: 45px;
-        padding: 10px;
-        padding-right:160px;
+        padding: 20px;
+        padding-right:140px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 20px;        
     }
     .kkk input{
         font-size: 45px;
-        padding: 10px; 
-        padding-right:160px;
+        padding: 20px; 
+        padding-right:140px;
         margin-left: 20px;
     box-shadow: 3px 3px 3px grey ;
         margin-top: 20px;        
