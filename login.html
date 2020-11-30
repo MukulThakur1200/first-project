@@ -17,7 +17,7 @@
             var fg=localStorage.getItem("Name");
 
            var pr= prompt("Security Question: \n"+qe);
-            
+           
             if(an==pr)
                 {
                     alert("Your Username:- " + fg +"\nYour Password:-  " +st+ "\n");
@@ -26,7 +26,8 @@
                 alert("Wrong Answer!!\n \n I would Suggest you to create a new account.");
             }
             
-        };
+        }
+        
     
         function create()
         {
@@ -79,6 +80,10 @@
                 var stpassword=localStorage.getItem("password");
 
                 var bk = document.getElementById("c1");
+                var ak= localStorage.getItem("cap");
+                
+                
+                
                 
                 
                 
@@ -89,17 +94,22 @@
                         alert("Login successful");
                     }
                     
-                     else if(ak !=bk.value)
+                     else if(ak !=bk.value && bk.value>0)
                 {
                          alert("Wrong Captcha!!");
                     window.location.reload();
                         
-                }  
-                else{
+                } 
+               
+                else 
+                {
                     
-                    alert("invalid password");
+                    alert("invalid Credentials");
                     location.reload();
                 }
+                
+                
+                
                 
         
             
@@ -183,10 +193,28 @@
         
                    
         }
+
+        function cpch()
+        {
+         
+    var c=document.getElementById("cap");
+    var d=c.getContext("2d");
+    d.font="30px arial";
+    d.fillStyle="#18be18";
+    d.fillRect(0,0,100,40);
+   var ak =""+Math.floor((Math.random()*10000)+1);
+            localStorage.setItem("cap",ak);
+    d.strokeStyle="white";
+    d.strokeText(ak,10,30);
+    d.moveTo(10,20);
+    d.lineTo(85,20);
+    d.stroke();
+}
         
     
+    
     </script>
-<body>
+<body onload="cpch()">
     <div class="all" id="all">
         <div class="top" id="top"> 
             <h1>HackerRank</h1>
@@ -203,7 +231,7 @@
     <input id="pass" type="password" placeholder="Your password">
         </div>
         <canvas id="cap" width="100" height="40" style="border:1px solid black;"></canvas>
-        <i class="fas fa-sync-alt" id="jkl"></i>  
+        <i class="fas fa-sync-alt" id="jkl" onclick="cpch()";></i>  
         <div class="pass">
         <input type="text" id="c1" placeholder="Captcha">
         </div>
@@ -263,23 +291,6 @@
         </div>
     
          </body>
-      <script>
-    
-    var c=document.getElementById("cap");
-    var d=c.getContext("2d");
-    d.font="30px arial";
-    d.fillStyle="#18be18";
-    d.fillRect(0,0,100,40);
-   var ak =""+Math.floor((Math.random()*10000)+1);
-    d.strokeStyle="white";
-    d.strokeText(ak,10,30);
-    d.moveTo(10,20);
-    d.lineTo(85,20);
-    d.stroke();
-
-                                    
-    
-   
-        </script>
+     
     
 </html>
