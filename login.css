@@ -393,6 +393,24 @@ width: 50%;
 .dev{
     display: none;
 }
+
+
+.cont{
+    border: 2px double black;
+    border-radius: 3px;
+    max-width:100%;
+    font-size: 15px;
+
+    }
+.remb{
+    border: 2px double black;
+    padding: 3px;
+    max-width: 7%
+}
+.remb a{
+    border: 2px double black;
+    padding: 10px;
+}
 @media only screen and (max-width:980px){
     
     .right{

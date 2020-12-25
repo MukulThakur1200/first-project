@@ -6,7 +6,14 @@
 
     </head>
     <script>
-            
+        
+        var r=localStorage.getItem("R");
+        
+          if(r==1)
+              {
+                location.href="learn.html";
+              }
+        
          
         
         function forgot(){
@@ -29,6 +36,8 @@
         }
         
     
+                 
+
         function create()
         {
             var pp =document.getElementById("jk").value;
@@ -82,15 +91,12 @@
                 var bk = document.getElementById("c1");
                 var ak= localStorage.getItem("cap");
                 
-                
-                
-                
-                
+            
                 
                 if(stpassword == password && stname == name && bk.value==ak)
                 {
                     
-                     window.location.replace("amajon.html");
+                     window.location.replace("learn.html");
                         alert("Login successful");
                     }
                     
@@ -105,6 +111,7 @@
                 {
                     
                     alert("invalid Credentials");
+                    localStorage.setItem("R",0);
                     location.reload();
                 }
                 
@@ -118,13 +125,15 @@
         function tick(){
          document.getElementById("box").style.display="none";                           
          document.getElementById("ch").style.display="block";
+            localStorage.setItem("R",1);
             
         };
         
         function pick(){
         
         document.getElementById("box").style.display="block";                           
-         document.getElementById("ch").style.display="none";        
+         document.getElementById("ch").style.display="none";
+             localStorage.setItem("R",0);
         };
     
     
@@ -237,8 +246,11 @@
         </div>
             <div class="ancor" id="ancor">
                 <div class="rem"> 
-                    <div id="ch" onclick="javascript:pick()";><i class="fas fa-check"></i></div>
-                    <div id="box" onclick="javascript:tick()";><i class="far fa-square" ></i></div>
+                    <div id="ch" onclick="javascript:pick()";>
+                        <i class="fas fa-check"></i></div>
+                    
+                    <div id="box" onclick="javascript:tick()";>
+                        <i class="far fa-square" ></i></div>
                     <p> Remember me </p> 
                 </div> 
             <a href="javascript:forgot();">Forgot Your Password?</a>
@@ -290,7 +302,9 @@
      </div>
         </div>
     
-         </body>
-     
     
+
+    
+         </body>
+   
 </html>
