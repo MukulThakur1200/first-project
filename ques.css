@@ -1,0 +1,118 @@
+
+.top1{
+    height: 18vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+   
+}
+a{
+   text-decoration: none;
+}
+.top1 h1{
+    font-family:inherit;
+    font-weight: 900;
+    font-size: 25px;
+    padding-left: 47.5px;
+    padding-right: 2px;
+    border-right: 15px solid #3caa3c;
+}
+.body1{
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+/*   grid-gap: 50px;*/
+}
+.def{
+      background-color: white;
+    border: 1px solid white;
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    text-align: center; 
+    box-shadow: 1px 1px 20px 0px #bebebe;
+    margin: 30px;
+}
+
+.def h3{
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.def p{
+    text-align: left;
+    margin-left: 10px;
+}
+.stat{
+    width: 80%;
+    margin-left: 10px;
+    height: 7px;
+    background-color: #e5e4e4;
+}
+
+
+.jkl {
+
+    border: 2px solid #069106;
+    margin: 10px;
+    margin-right: 230px;
+    padding: 5px;
+    
+}
+.jkl a{
+    color:#069106;
+   font-weight: 500;
+    font-size: 25px;
+}
+.star{
+    border: 2px solid black;
+    width: auto;
+    float: right;
+    margin-right: 10%;
+    
+}
+
+.far fa-star{
+    color: gold;
+    background-color: gold;
+}
+
+body{
+    background-color: rgba(210, 219, 221, 0.06);
+
+}
+
+@media only screen and (max-width:980px){
+    
+      .top1 h1{
+       
+        font-size: 60px;
+      font-family: inherit;
+        padding-right: 5px;
+    }
+    .body1{
+    display: grid;
+     grid-template-columns: repeat(1, 1fr);
+/*    grid-gap: 50px;*/
+}
+    
+    .jkl{
+        margin-left: 20px;
+    }
+    .jkl a{
+        font-size: 50px;
+    }
+      .def{
+        width: 750px;
+        height: 370px;
+        margin: 5%;
+        margin-left:7%;
+        
+    }
+    .def h3{
+        font-size: 70px;
+        margin-top:50px;
+        margin-left: 20px;
+    }
+}
