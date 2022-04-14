@@ -1,0 +1,271 @@
+<html>
+<head>
+    <title>Linked List</title>
+    <link rel="stylesheet" href="problem.css">
+    </head>
+     <style>
+        .top,.all {
+            display: none;
+        }
+    </style>
+    <body>
+        <div class="complete">
+            
+        <div class="top">
+       <h1>Searching in linked list</h1>
+        </div>
+        <div class="all">
+            <div class="prob">
+           <p>Given a singly linked list and a number k. Write a function to find the (N/k)th element, where N is the number of elements in the list. We need to consider ceil value in case of decimals.<br></p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>
+The first line of input contains an integer T denoting the number of test cases. The first line of each test case consists of an integer N. The second line consists of N spaced integers.The last line consists of an integer k.
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>
+Print the data value of (N/k)th node in the Linked List.</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1 <= T <= 100<br>
+1 <= N <= 100</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>2<br>
+6<br>
+1 2 3 4 5 6<br>
+2<br>
+5<br>
+2 7 9 3 5<br>
+3</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>3<br>7</p>
+            </div>
+            <div class="exp">
+                <h4>Explanation: </h4>
+                <p>Testcase 1: 6/2th element is the 3rd(1-based indexing) element which is 3.</p>
+            </div>
+        </div>          
+    
+       <div class="top">
+       <h1>Intersection in linked list</h1>
+        </div>
+        <div class="all">
+            <div class="prob">
+           <p>
+               Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
+<br>
+For example, the following two linked lists begin to intersect at node c1:<br>
+               
+The test cases are generated such that there are no cycles anywhere in the entire linked structure.
+<br>
+Note that the linked lists must retain their original structure after the function returns.
+</p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p> Intersected at '8'</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>The number of nodes of listA is in the m.<br>
+The number of nodes of listB is in the n.<br>
+1 <= m, n <= 3 * 104<br>
+1 <= Node.val <= 105<br>
+0 <= skipA < m<br>
+0 <= skipB < n<br>
+intersectVal is 0 if listA and listB do not intersect.<br>
+intersectVal == listA[skipA] == listB[skipB] if listA and listB intersect.</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p> intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p> Intersected at '2'</p>
+            </div>
+            <div class="exp">
+                <h4>Explanation: </h4>
+                <p>The intersected node's value is 2 (note that this must not be 0 if the two lists intersect).<br>
+From the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B.
+                </p>
+            </div>
+        </div>
+        
+        <div class="top">
+       <h1>Cycle in Linked list</h1>
+        </div>
+        <div class="all">
+            <div class="prob">
+           <p>
+             Given a linked list of N nodes. The task is to check if the linked list has a loop. Linked list can contain self loop.
+</p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>
+                N = 3<br>
+value[] = {1,3,4}<br>
+x = 2
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>True</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1 ≤ N ≤ 104<br>
+1 ≤ Data on Node ≤ 103</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>N = 4<br>
+value[] = {1,8,3,4}<br>
+x = 0
+
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>False</p>
+            </div>
+         <div class="out">
+                <h4>Explaination</h4>
+            <p> In above test case N = 3.<br>
+The linked list with nodes N = 3 is
+given. Then value of x=2 is given which
+means last node is connected with xth
+node of linked list. <br>Therefore, there
+exists a loop.</p>
+            </div>
+        </div>
+      
+       <div class="top">
+       <h1>Find the Position of Cycle</h1>
+        </div>      
+        <div class="all">
+            <div class="prob">
+           <p>Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
+<br>
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to (0-indexed). It is -1 if there is no cycle. Note that pos is not passed as a parameter.
+<br>
+Do not modify the linked list.
+                </p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>N = 5<br>
+head = [3,2,0,-4], pos = 1<br>
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>tail connects to node index 1
+</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>The number of the nodes in the list is in the range [0, 104].<br>
+-105 <= Node.val <= 105<br>
+pos is -1 or a valid index in the linked-list.</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>N = 1
+                <br>
+ head = [1], pos = -1<br>
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>no cycle </p>
+            </div>
+            <div class="exp">
+                <h4>Explanation: </h4>
+                <p>
+                    There is a cycle in the linked list, where tail connects to the second node.<br>
+                     There is no cycle in the linked list.
+                </p>
+            </div>
+        </div>  
+        
+       <div class="top">
+       <h1>Reverse a linked list</h1>
+        </div> 
+       <div class="all">
+            <div class="prob">
+           <p>
+Given pointer to the head node of a linked list, the task is to reverse the linked list. We need to reverse the list by changing the links between nodes.<br>
+               
+Given a linked list of N nodes. The task is to reverse this list.
+
+                </p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>N = 6<br>
+LinkedList: 1->2->3->4->5->6
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p> 6 5 4 3 2 1</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1 <= N <= 104 </p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>N = 5
+                <br>
+LinkedList: 2->7->8->9->10<br>
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>10 9 8 7 2 </p>
+            </div>
+            <div class="exp">
+                <h4>Your Task: </h4>
+                 The task is to complete the function reverseList() with head reference as the only argument and should return new head after reversing the list.<br><br>
+                    <h4>Expected Time Complexity: </h4>
+                     O(N).
+                <h4>Expected Auxiliary Space: </h4>
+                O(1).
+
+            </div>
+        </div>        
+
+    </div>
+        
+    <div class="compiler">
+        <div class="h">Test Here </div>
+          <form method="post" action=
+"https://www.jdoodle.com/api/redirect-to-post/c-online-compiler">
+          
+        <textarea name="initScript" class="txt"
+            rows="8" cols="80">
+        </textarea>
+  
+        <input class="but" type="submit" value="Test">
+    </form>
+        </div>
+                <script type="text/javascript">
+        let qno = window.location.hash.substr(1);
+//            console.log(qno.substr(1));
+            document.getElementsByClassName('top')[qno].style.display = 'block';
+            document.getElementsByClassName('all')[qno].style.display = 'block';
+        </script>
+        </body>
+</html>

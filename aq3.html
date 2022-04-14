@@ -1,0 +1,263 @@
+<html>
+<head>
+    <title>Array</title>
+    <link rel="stylesheet" href="problem.css">
+    </head>
+     <style>
+        .top,.all {
+            display: none;
+        }
+    </style>
+    <body>
+        <div class="complete">
+            
+        <div class="top">
+       <h1>Balanced Paranthesis</h1>
+        </div>
+        <div class="all">
+            <div class="prob">
+           <p>Teams A and B are having a penalty shoot-out to decide the winner of their football match. Each team gets to take a shot N times, and the team with the higher number of scored goals at the end wins. If the number of goals scored during the shoot-out by each team turns out to be the same even after all 2N shots, then they stop and agree that the result is a draw.
+<br>
+The two teams take shots alternately — team A shoots first, then team B shoots, then team A and so on until team B takes its N-th shot (at which point each team has taken exactly N shots). Even though all 2N shots are taken, the result of the shoot-out is often known earlier — e.g. if team A has already scored N−1 goals and team B has missed at least two shots, team A is definitely the winner.
+<br>
+For each shot, you know whether it was a goal or a miss. You need to find the earliest moment when the winner is known — the smallest s (0≤s≤2N) such that after s shots, the result of the shoot-out (whether team A won, team B won or the match is drawn) would be known even if we did not know the results of the remaining 2N−s shots.
+</p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.<br>
+The first line of each test case contains a single integer N.<br>
+The second line contains a string S with length 2⋅N, where for each valid i, the i-th character is '0' if the i-th shot was a miss or '1' if it was a goal.
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>For each test case, print a single line containing one integer — the smallest s such that after s shots, the result of the shoot-out is known.</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1≤T≤105<br>
+1≤N≤105<br>
+S contains only characters '0' and '1'<br>
+the sum of N over all test cases does not exceed 106</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>2<br>3<br>
+101011<br>
+3<br>
+100001</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>4<br>6</p>
+            </div>
+            <div class="exp">
+                <h4>Explanation: </h4>
+                <p>Example case 1: After four shots, team A has scored 2 goals and team B has scored 0 goals. Whatever happens afterwards, team A is guaranteed to win, since even if team B scored their last (and only) goal and team A did not score their last goal, team A would still win by 1 goal.</p>
+            </div>
+        </div>          
+    
+       <div class="top">
+       <h1>Queue Using Stack</h1>
+        </div>
+        <div class="all">
+            <div class="prob">
+           <p>
+               Given an array Arr[] of N integers. Find the contiguous sub-array(containing at least one number) which has the maximum sum and return its sum.
+               <br>
+               You don't need to read input or print anything. The task is to complete the function maxSubarraySum() which takes Arr[] and N as input parameters and returns the sum of subarray with maximum sum.
+</p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>N = 5<br>
+Arr[] = {1,2,3,-2,5}
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>9</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1 ≤ N ≤ 106<br>
+-107 ≤ A[i] ≤ 107</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>N = 4
+                <br>
+Arr[] = {-1,-2,-3,-4}<br>
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>-1</p>
+            </div>
+            <div class="exp">
+                <h4>Explanation: </h4>
+                <p>Example 1:<br>
+                    Max subarray sum is 9
+of elements (1, 2, 3, -2, 5) which 
+is a contiguous subarray.<br>
+                    Example 2:
+                    <br>Max subarray sum is -1 
+of element (-1)
+                
+                </p>
+            </div>
+        </div>
+        
+        <div class="top">
+       <h1>Reverse of queue</h1>
+        </div>
+        <div class="all">
+            <div class="prob">
+           <p>
+             Given an array A of size N, print the reverse of it.
+</p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>First line contains an integer denoting the test cases 'T'. T testcases follow. Each testcase contains two lines of input. First line contains N the size of the array A. The second line contains the elements of the array.
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>For each testcase, in a new line, print the array in reverse order.</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1 <= T <= 100<br>
+1 <= N <=100 <br>
+0 <= Ai <= 100</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>1<br>4<br>1 2 3 4
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>4 3 2 1</p>
+            </div>
+        
+        </div>
+      
+       <div class="top">
+       <h1>Push Or Pop Operation</h1>
+        </div>      
+        <div class="all">
+            <div class="prob">
+           <p>Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.<br> You don't need to read input or print anything. Your task is to complete the function sort012() that takes an array arr and N as input parameters and sorts the array in-place.
+                </p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>N = 5<br>
+Arr[] = {0 2 1 2 0}
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>0 0 1 2 2</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1 ≤ N ≤ 10^6<br>
+0 <= A[i] <= 2</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>N = 3
+                <br>
+Arr[] = {0 1 0}<br>
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>0 0 1 </p>
+            </div>
+            <div class="exp">
+                <h4>Explanation: </h4>
+                <p>Example 1:<br>
+                    0s 1s and 2s are segregated 
+into ascending order.
+                    <br>
+                    Example 2:
+                    <br> 0s 1s and 2s are segregated 
+into ascending order.
+                </p>
+            </div>
+        </div>  
+        
+       <div class="top">
+       <h1>Reverse String</h1>
+        </div> 
+       <div class="all">
+            <div class="prob">
+           <p>Given an array of integers. Find the Inversion Count in the array. 
+<br>
+Inversion Count: For an array, inversion count indicates how far (or close) the array is from being sorted. If array is already sorted then the inversion count is 0. If an array is sorted in the reverse order then the inversion count is the maximum. <br>
+Formally, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i is less then j .<br>
+               You don't need to read input or print anything. Your task is to complete the function inversionCount() which takes the array arr[] and the size of the array as inputs and returns the inversion count of the given array.
+
+                </p>
+            </div>
+            <div class="out">
+                <h4>Input: </h4>
+            <p>N = 5<br>
+Arr[] = {2 4 1 3 5}
+</p>
+            </div>
+            <div class="out">
+                <h4>Output: </h4>
+            <p>3</p>
+            </div>
+             <div class="out">
+                <h4>Constraints: </h4>
+            <p>1 ≤ N ≤ 5*10^5<br>
+1 ≤ arr[i] ≤ 10^18</p>
+            </div> <div class="out">
+                <h4>Sample Input  </h4>
+            <p>N = 5
+                <br>
+Arr[] = {2 3 4 5 6}<br>
+</p>
+            </div> 
+            <div class="out">
+                <h4>Sample Output </h4>
+            <p>0</p>
+            </div>
+            <div class="exp">
+                <h4>Explanation: </h4>
+                <p>Example 1:<br>
+                   The sequence 2, 4, 1, 3, 5 
+has three inversions (2, 1), (4, 1), (4, 3).
+                    <br>
+                    Example 2:
+                    <br>
+                    As the sequence is already 
+sorted so there is no inversion count.
+                </p>
+            </div>
+        </div>        
+        
+    </div>
+        
+    <div class="compiler">
+        <div class="h">Test Here </div>
+          <form method="post" action=
+"https://www.jdoodle.com/api/redirect-to-post/c-online-compiler">
+          
+        <textarea name="initScript" class="txt"
+            rows="8" cols="80">
+        </textarea>
+  
+        <input class="but" type="submit" value="Test">
+    </form>
+        </div>
+         <script type="text/javascript">    
+    let s= window.location.hash.substr(1);
+         document.getElementsByClassName('top')[s].style.display = 'block';
+            document.getElementsByClassName('all')[s].style.display = 'block';
+    </script>
+        </body>
+</html>

@@ -1,0 +1,262 @@
+<html>
+    <head>
+        <title>Array</title>
+         <script src="https://kit.fontawesome.com/f3bafaabb7.js" crossorigin="anonymous"></script>
+        </head>
+    <link rel="stylesheet" href="ques.css">
+  
+    <body>
+    
+         <div class="top1" > 
+            <h1>Array</h1>
+        </div>
+        <div class="body1" id="body1">
+<!--
+             <div class="def">
+              <h3>Max & Min</h3>
+                
+             Star:<input type="checkbox" id="sum" onclick="sum();">
+                                  
+               <div class="jkl" id="jas">
+                     <a id="as" href="aq1.html">Solve chalange</a>
+                  </div>
+              </div>
+        
+            <div class="def">
+              <h3>SubArary</h3>
+                
+             Star:<input type="checkbox" id="sum1" onclick="sum();">
+                                  
+               <div class="jkl" id="jas1">
+                     <a id="as1" href="aq1.html">Solve chalange</a>
+                  </div>
+              </div>
+          
+            <div class="def">
+              <h3>Reverse of Array</h3>
+                
+             Star:<input type="checkbox" id="sum2" onclick="sum();">
+                                  
+               <div class="jkl" id="jas2">
+                     <a id="as2" href="aq1.html">Solve chalange</a>
+                  </div>
+              </div>
+          
+            <div class="def">
+              <h3>Sorting</h3>
+                
+             Star:<input type="checkbox" id="sum3" onclick="sum();">
+                                  
+               <div class="jkl" id="jas3">
+                     <a id="as3" href="aq1.html">Solve chalange</a>
+                  </div>
+              </div>
+          
+            <div class="def">
+              <h3>Count Inversion</h3>
+                
+             Star:<input type="checkbox" id="sum4" onclick="sum();">
+                                  
+               <div class="jkl" id="jas4">
+                     <a id="as4" href="aq1.html">Solve chalange</a>
+                  </div>
+              </div>
+          
+-->
+        </div>
+        <script type="text/javascript">
+            let questions = [
+                {
+                    "title" : "Max & Min",
+                    "url" : "aq1.html#0"
+                },
+                {
+                    "title" : "SubArray",
+                    "url" : "aq1.html#1"
+                },
+                {
+                    "title" : "Reverse of Array",
+                    "url" : "aq1.html#2"
+                },
+                {
+                    "title" : "Sorting",
+                    "url" : "aq1.html#3"
+                },
+                {
+                    "title" : "Count Inversion",
+                    "url" : "aq1.html#4"
+                },
+            ];
+            
+            function loadQuestions()
+            {
+                let container = document.getElementById("body1");
+                container.innerHTML = "";
+                let i = 0;
+                questions.forEach(question=>{
+                    let html = `
+    <div class="def">
+              <h3>${question.title}</h3>
+                
+             Star:<input type="checkbox" class="sum" onclick="sum()">
+                                  
+               <div class="jkl" id="jas${i}">
+                     <a id="as${i}" href="${question.url}">Solve challenge</a>
+                  </div>
+              </div>
+                    `;
+                    i++;
+                    container.innerHTML += html;
+                });
+            }
+            
+            function sum(){
+                /*
+//           var x= document.getElementById("sum").checked;
+//            var x1= document.getElementById("sum1").checked;
+//            var x2= document.getElementById("sum2").checked;
+//            var x3= document.getElementById("sum3").checked;
+//            var x4= document.getElementById("sum4").checked;
+//            
+//            if(x==true)
+//            {
+//                 
+//           document.getElementById("as").innerHTML=" Completed";
+//           document.getElementById("as").style.color="white";                       document.getElementById("jas").style.backgroundColor="limegreen";
+//                
+//                    
+//               }
+//              
+//         if(x1==true)
+//            {
+//                
+//           document.getElementById("as1").innerHTML=" Completed";
+//           document.getElementById("as1").style.color="white";                       document.getElementById("jas1").style.backgroundColor="limegreen";
+//                 
+//                    
+//              }
+//                     
+//         if(x2==true)
+//            {
+//                
+//           document.getElementById("as2").innerHTML=" Completed";
+//           document.getElementById("as2").style.color="white";                       document.getElementById("jas2").style.backgroundColor="limegreen";
+//                 
+//                    
+//               }
+//             if(x3==true)
+//            {
+//                
+//           document.getElementById("as3").innerHTML=" Completed";
+//           document.getElementById("as3").style.color="white";                       document.getElementById("jas3").style.backgroundColor="limegreen";
+//                 
+//                    
+//               }
+//             if(x4==true)
+//            {
+//                
+//           document.getElementById("as4").innerHTML=" Completed";
+//           document.getElementById("as4").style.color="white";                       document.getElementById("jas4").style.backgroundColor="limegreen";
+//                 
+//                    
+//               }
+//            
+//            if (x==false)
+//               {
+//                     
+//           document.getElementById("as").innerHTML=" Solve Challange";
+//           document.getElementById("as").style.color="green";                       document.getElementById("jas").style.backgroundColor="white";
+//                  
+//                   
+//
+//               }
+//            if (x1==false)
+//               {
+//                     
+//           document.getElementById("as1").innerHTML=" Solve Challange";
+//           document.getElementById("as1").style.color="green";                       document.getElementById("jas1").style.backgroundColor="white";
+//           
+//                    
+//               }
+//            if (x2==false)
+//               {
+//                     
+//           document.getElementById("as2").innerHTML=" Solve Challange";
+//           document.getElementById("as2").style.color="green";                       document.getElementById("jas2").style.backgroundColor="white";
+//           
+//                    
+//               }
+//            if (x3==false)
+//               {
+//                     
+//           document.getElementById("as3").innerHTML=" Solve Challange";
+//           document.getElementById("as3").style.color="green";                       document.getElementById("jas3").style.backgroundColor="white";
+//           
+//                    
+//               }
+//            if (x4==false)
+//               {
+//                     
+//           document.getElementById("as4").innerHTML=" Solve Challange";
+//           document.getElementById("as4").style.color="green";                       document.getElementById("jas4").style.backgroundColor="white";
+//           
+//                    
+//               }
+//            
+//            if(x==true)
+//                {   s=s+20;
+//                      }
+//            else if(x1==true)
+//                {  s=s+20;
+//                     }             
+//           else if(x2==true)
+//                {  s=s+20;
+//                     }      
+//            else if(x3==true)
+//                {  s=s+20;
+//                     } 
+//            else if(x4==true)
+//                {  s=s+20;
+//                     } 
+//            
+//            else if(x==false)
+//                {   s=s-20;
+//                      }
+//            else if(x1==false)
+//                {  s=s-20;
+//                     }             
+//           else if(x2==false)
+//                {  s=s-20;
+//                     }      
+//            else if(x3==false)
+//                {  s=s-20;
+//                     } 
+//            else if(x4==false)
+//                {  s=s-20;
+//                     } */ 
+                
+            let s = 0;
+            let stars = document.getElementsByClassName('sum');
+            let i = 0;
+            for(i = 0; i < stars.length; i++){
+                let star = stars[i];
+                
+               if(star.checked) {
+                   s += 20;
+                    document.getElementById("as"+i).innerHTML=" Completed";
+                    document.getElementById("as"+i).style.color="white";                       document.getElementById("jas"+i).style.backgroundColor="limegreen";
+               } 
+                else {
+                   document.getElementById("as"+i).innerHTML=" Solve Challange";
+                    document.getElementById("as"+i).style.color="green";                       document.getElementById("jas"+i).style.backgroundColor="white";
+
+                }
+            }
+            localStorage.setItem("A1",s);
+        }
+    
+            
+            loadQuestions();
+        </script>
+    </body>
+</html>
